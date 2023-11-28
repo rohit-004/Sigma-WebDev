@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            background-color: blue;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: rohitsAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rohitsAnimation 3s ease-in-out 3s 1,
+                        rohit2 3s ease-in-out 3s 1;
+        }
+
+
+        @keyframes rohitsAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+        @keyframes rohit2 {
+            0%{
+                transform: rotate(60deg);
+            }
+            20%{
+                transform: rotate(120deg);
+            }
+            40%{
+                transform: rotate(180deg);
+            }
+            60%{
+                transform: rotate(240deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

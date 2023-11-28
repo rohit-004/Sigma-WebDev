@@ -1,0 +1,15 @@
+td{
+    border: 2px solid black;
+}
+
+p,dt {
+  font-weight: bold;
+}
+
+dl,dd {
+  font-size: 20px;
+}
+
+dd {
+  margin-bottom: 10px;
+}
