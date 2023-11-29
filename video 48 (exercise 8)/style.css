@@ -6,7 +6,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: bounce 10s ease infinite alternate;
+    animation: bounce 3s linear infinite alternate;
 }
 .container{
     position: relative;

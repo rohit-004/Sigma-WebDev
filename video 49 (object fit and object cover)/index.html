@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and object cover</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 444px;
+            border: 2px solid black;
+            background-position: center center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHxS4qCcvtPTAfpzlMNFMB0XWWUWG77kdgRSBlL8rnfq5E-u4Fd659p1w1T76P-ihu28&usqp=CAU");
+            background-repeat: no-repeat;
+
+        }
+        img{
+            width: 444px;
+            height: 634px;
+            object-fit: cover;
+            /* object-position: bottom right;  */
+            object-position: 10px 20px; 
+            /* object-fit: fill; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://cdn.pixabay.com/photo/2023/11/03/11/59/viper-8362870_1280.jpg" alt="snake"> -->
+    </div>
+</body>
+</html>
